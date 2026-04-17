@@ -1,0 +1,77 @@
+* {
+.feature-grid,
+.service-grid,
+.inventory-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.about-grid,
+.contact-box {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.feature-card,
+.service-card,
+.car-card,
+.contact form {
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
+.car-info span {
+  display: inline-block;
+  margin-top: 10px;
+  color: #f59e0b;
+  font-weight: 700;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+footer {
+  background: #111827;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .hero-content,
+  .feature-grid,
+  .service-grid,
+  .inventory-grid,
+  .about-grid,
+  .contact-box,
+  .nav {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  nav {
+    margin-top: 20px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 10px;
+  }
+}
